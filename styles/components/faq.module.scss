@@ -1,0 +1,131 @@
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  color: #000;
+  cursor: pointer;
+  padding: 12px 30px 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  min-height: 93px;
+}
+
+.accordion:hover .accordion__title {
+}
+
+.accordion:hover svg {
+  transition: all 0.3s ease-out;
+}
+
+.accordion__title {
+  font-family: "ak-light" !important;
+  font-size: 25px;
+  text-align: left;
+  width: 85%;
+  color: #0b0754;
+}
+
+.accordion__icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion__icon path {
+  fill: #5622bd;
+}
+
+.accordion__content {
+  background-color: #fff;
+  overflow: auto;
+  font-size: 20px;
+  padding-top: 0px !important;
+  font-family: "ak-reg";
+  color: #707070;
+  // margin-left: 35px;
+  transition: max-height 0.4s ease;
+  padding: 0 50px 0 30px;
+  line-height: 130%;
+  white-space: pre-line;
+
+  .listItem {
+    white-space: pre-line;
+    position: relative;
+    margin-left: 20px;
+    padding: 5px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -20px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #707070;
+    }
+  }
+
+  .keyValue {
+    margin: 15px 0;
+
+    span {
+      &:first-child {
+        color: #0b0754;
+        font-family: 20px;
+        font-family: "ak-med";
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .accordion {
+    min-height: 70px;
+    padding: 12px 20px 12px 20px;
+
+    svg {
+      width: 18px;
+    }
+  }
+
+  .accordion__title {
+    font-size: 18px;
+  }
+
+  .accordion__content {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .accordion__content {
+    // margin-left: 32px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .accordion {
+    // padding: 12px 12px 12px 0;
+  }
+
+  .accordion__title {
+    font-size: 17px;
+    // margin-left: 20px;
+  }
+
+  .accordion__content {
+    font-size: 14px;
+  }
+
+  .accordion__icon svg {
+    // width: 8px !important;
+  }
+}

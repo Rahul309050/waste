@@ -1,0 +1,344 @@
+@font-face {
+  font-family: "ak-reg";
+  src: url("/fonts/AktivGrotesk-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ak-med";
+  src: url("/fonts/AktivGrotesk-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ak-light";
+  src: url("/fonts/AktivGrotesk-Light.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ak-lightItalic";
+  src: url("/fonts/AktivGrotesk-LightItalic.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ak-thin";
+  src: url("/fonts/AktivGrotesk-Thin.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ak-bold";
+  src: url("/fonts/AktivGrotesk-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ak-Sbold";
+  src: url("/fonts/AktivGrotesk-XBold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "h-reg";
+  src: url("/fonts/Helvetica-regular.ttf");
+  font-display: swap;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #7db3ff;
+  color: #fff;
+  font-family: "ak-reg";
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1794px;
+  width: 95%;
+  margin: auto;
+  padding-left: 3%;
+}
+
+.errorText {
+  font-size: 15px !important;
+  color: #ee2c3c !important;
+  font-family: "ak-reg" !important;
+  padding-left: 5px !important;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lottie-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-overlay {
+  position: absolute;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200 !important;
+}
+
+.hero-content-line-inner {
+  opacity: 0;
+  overflow: hidden;
+  transition: all 1.3s;
+  transform: translateY(120px);
+}
+
+.slick-active .hero-content-line-inner {
+  opacity: 1;
+  overflow: hidden;
+  transition: all 1.3s;
+  transform: translateY(0px);
+}
+
+.css-319lph-ValueContainer {
+  padding: 2px 0px !important;
+}
+
+.css-12gdvjg-indicatorContainer,
+.css-12gdvjg-indicatorContainer {
+  font-size: 16px !important;
+}
+
+.css-1d8n9bt {
+  padding: 0 2px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #a652ff !important;
+  font-size: 12px !important;
+}
+
+.slick-dots li button:before {
+  color: #707070 !important;
+  font-size: 10px !important;
+}
+
+.slick-dots {
+  bottom: -35px !important;
+}
+
+.slick-dots li {
+  margin: 0 !important;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  position: relative;
+  margin: 25px auto;
+  width: 50px;
+  height: 50px;
+  display: block;
+  overflow: hidden;
+}
+
+.spinner div {
+  height: 100%;
+}
+
+.spinner3,
+.spinner3 div {
+  border-radius: 50%;
+  padding: 2px;
+  border: 1px solid transparent;
+  -webkit-animation: rotate linear 3.5s infinite;
+  animation: rotate linear 3.5s infinite;
+  border-top-color: rgba(0, 0, 0, 0.5);
+  border-left-color: rgba(0, 0, 255, 0.5);
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0.38, 0.21, 0.88);
+  animation-timing-function: cubic-bezier(0.55, 0.38, 0.21, 0.88);
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.loaderBtn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loaderBtn--dot {
+  -webkit-animation-name: loader;
+          animation-name: loader;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  border: 2px solid white;
+  opacity: 0.7;
+}
+
+.loaderBtn--dot:first-child {
+  background-color: #fff;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.loaderBtn--dot:nth-child(2) {
+  background-color: #fff;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.loaderBtn--dot:nth-child(3) {
+  background-color: #fff;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loaderBtn--dot:nth-child(4) {
+  background-color: #fff;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+@-webkit-keyframes loader {
+  15% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(155px);
+  }
+  65% {
+    transform: translateX(155px);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes loader {
+  15% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(155px);
+  }
+  65% {
+    transform: translateX(155px);
+  }
+  95% {
+    transform: translateX(0);
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .slick-dots li.slick-active button:before {
+    font-size: 10px !important;
+  }
+  .slick-dots li button:before {
+    font-size: 8px !important;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .loader-container-three {
+    width: 100%;
+    transform: scale(1.3);
+  }
+  .container {
+    padding-left: 0;
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .container {
+    width: 92%;
+    padding-left: 0;
+  }
+  .loader-container-three {
+    width: 100%;
+    transform: scale(1.4);
+  }
+  .slick-dots {
+    bottom: -25px !important;
+  }
+  .slick-dots li button:before {
+    font-size: 12px !important;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #19c8ff !important;
+    font-size: 12px !important;
+  }
+  .slick-dots li {
+    margin: 0 !important;
+  }
+}
+.experts__item--listContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

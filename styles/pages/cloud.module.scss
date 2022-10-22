@@ -1,0 +1,1097 @@
+.firstSec {
+  background-color: #000;
+  padding-top: 115px;
+  height: 100%;
+  // height: calc(100vh - 120px);
+}
+
+.secondSec {
+  background-image: url("../../public/images/home_page/dotted-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.security {
+  background-image: url("../../public/images/home_page/dotted-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // height: 100vh;
+
+  padding: 100px 0px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5rem;
+  }
+
+  &__head {
+    // padding-top: 10%;
+    &--title {
+      font-size: 45px;
+      font-weight: 300;
+    }
+
+    &--button {
+      margin-top: 40px;
+      width: fit-content;
+
+      div {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    padding: 8% 8% 2% 8%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.3fr 1fr 0.2fr;
+
+    border: 1px solid #fff;
+    position: relative;
+
+    height: 100%;
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: transparent;
+      position: absolute;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--img {
+      align-self: center;
+
+      img {
+        width: 45%;
+      }
+    }
+
+    &--title {
+      flex: 1;
+      font-size: 24px;
+
+      align-self: center;
+    }
+
+    &--text {
+      flex: 2;
+
+      font-size: 16px;
+      line-height: 160%;
+
+      margin-top: 10px;
+    }
+
+    &--arrow {
+      flex: 1;
+      display: flex;
+
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.sailPoint,
+.netwitness,
+.archer,
+.zestIOT,
+.aware,
+.brandsek {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  // height: 90vh;
+
+  &__information {
+    background-color: #fff;
+    padding: 3.6rem;
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.sailPoint {
+  &__image {
+    background-image: url(../../public/images/cybersecurity-products/sailpoint.jpg);
+  }
+}
+
+.netwitness {
+  &__image {
+    background-image: url(../../public/images/cybersecurity-products/netwitness.jpg);
+  }
+}
+
+.archer {
+  // height: 75vh;
+  &__image {
+    background-image: url(../../public/images/cybersecurity-products/archer.jpg);
+  }
+}
+
+.zestIOT {
+  // height: 70vh;
+  &__image {
+    background-image: url(../../public/images/cybersecurity-products/zest_iot.jpg);
+  }
+}
+
+.aware {
+  &__image {
+    background-image: url(../../public/images/cybersecurity-products/Ec_council_aware.svg);
+  }
+}
+
+.brandsek {
+  &__image {
+    background-image: url(../../public/images/cybersecurity-products/brand_sek.jpg);
+  }
+}
+
+.cyberProduct {
+  &__logo {
+    img {
+      filter: brightness(0%);
+      width: 25%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    color: #0b0754;
+    font-size: 45px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  &__info {
+    color: #5c2dcc;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 15px;
+  }
+
+  &__subtitle {
+    color: #5c2dcc;
+    margin: 15px auto;
+    font-size: 30px;
+  }
+
+  &__text {
+    p {
+      font-size: 18px;
+      color: #0b0754;
+      margin: 30px auto;
+      line-height: 140%;
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    h4 {
+      font-size: 22px;
+      color: #5c2dcc;
+      font-weight: normal;
+    }
+
+    p {
+      color: #0b0754;
+      font-size: 18px;
+      line-height: 140%;
+      margin-top: 8px;
+    }
+  }
+
+  &__disclaimer {
+    color: #5c2dcc;
+    font-style: italic;
+    font-size: 18px;
+  }
+}
+
+.recruitSec {
+  margin-top: -20px;
+  padding: 0 0 100px 0;
+  background-color: #000;
+  background-image: linear-gradient(90deg, #000 50%, transparent 50%),
+    url("../../public/images/skills_advantedge/skills_advantedge.jpg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  &__content {
+    max-width: 1794px;
+    width: 95%;
+    margin: auto;
+    padding-left: 3%;
+  }
+}
+
+.endToEnd {
+  margin-top: 15rem;
+
+  &__content {
+    background-image: url("../../public/images/skills_advantedge/Tech_roles.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &_one {
+      padding-top: 5%;
+
+      p {
+        font-size: 24px;
+        color: #45eaff;
+        font-family: "ak-med";
+        padding-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 50px;
+        color: #ffffff;
+        font-family: "ak-light";
+        font-weight: 100;
+        width: 80%;
+      }
+    }
+  }
+
+  .serviceContainer {
+    width: 100%;
+    display: flex;
+    background-color: #0b0754;
+    border-bottom: 1px solid #fff;
+    padding: 60px 0;
+
+    &__content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .serviceItem {
+        padding-right: 4%;
+        width: 20%;
+
+        &:first-child {
+          img {
+            transform: scale(1.5);
+          }
+        }
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+
+        h4 {
+          font-size: 24px;
+          padding-top: 20px;
+          font-family: "ak-reg";
+          font-weight: 100;
+          line-height: 140%;
+        }
+      }
+    }
+
+    .button {
+      padding: 100px 0 60px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+}
+
+.evaluationProcess {
+  background-color: #fff;
+  color: #000;
+  padding: 40px 0 90px 0;
+
+  &__content {
+    .heading {
+      font-size: 24px;
+      color: #5c2dcc;
+      font-family: "ak-reg";
+      padding-bottom: 30px;
+    }
+
+    .title {
+      font-size: 50px;
+      color: #0b0754;
+      font-family: "ak-med";
+      padding-bottom: 10px;
+      width: 90%;
+      font-weight: 100;
+    }
+
+    .description {
+      font-size: 24px;
+      color: #0b0754;
+      font-family: "ak-reg";
+      line-height: 150%;
+      width: 80%;
+    }
+
+    .listItems {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+      flex-wrap: wrap;
+
+      &__item {
+        width: 30%;
+        margin-bottom: 8%;
+
+        .title {
+          font-size: 30px;
+          font-family: "ak-med";
+          color: #0b0754;
+          padding: 15px 0 10px 0;
+        }
+
+        .description {
+          font-size: 22px;
+          color: #1f1f24;
+          font-family: "ak-light";
+          line-height: 160%;
+        }
+      }
+    }
+
+    .sectionButton {
+      padding-top: 50px;
+
+      p {
+        width: 246px;
+        height: 60px;
+        color: #fff;
+        font-size: 20px;
+        font-family: "ak-reg";
+        background-color: #5c2dcc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+
+        &:hover {
+          letter-spacing: 0.6px;
+        }
+      }
+    }
+  }
+}
+
+.thirdSec {
+  background-color: #5c2dcc;
+}
+
+.fourthSec {
+  background-color: #000;
+  padding: 100px 0;
+
+  &__content {
+    &_mob {
+      display: none;
+    }
+  }
+
+  .section_title {
+    display: none;
+  }
+
+  .getInTouch {
+    display: none;
+  }
+}
+
+.fifthSec {
+  background-color: #fff;
+  padding: 0 0 80px 0;
+}
+
+.cyberSecFaq {
+  background-image: url("../../public/images/cybersecurity/cybersecurity_FAQ.jpg") !important;
+}
+
+.sixthSec {
+  background-image: url("../../public/images/cloud/sixthBg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px 0;
+
+  &__content {
+    max-width: 1328px;
+
+    &_title {
+      font-size: 40px;
+      font-family: "ak-bold";
+      padding-bottom: 10px;
+    }
+
+    &_subtitle {
+      font-size: 60px;
+      font-family: "ak-light";
+      font-weight: 100;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .firstSec {
+    background-color: #000;
+    // padding-top: 140px;
+    height: 100%;
+    // height: calc(100vh - 120px);
+  }
+
+  .security {
+    &__head {
+      &--title {
+        font-size: 35px;
+      }
+      &--button {
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &__item {
+      padding: 5% 8%;
+
+      &--img {
+        img {
+          width: 50%;
+        }
+      }
+
+      &--title {
+        font-size: 20px;
+      }
+
+      &--text {
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  .sailPoint,
+  .netwitness,
+  .archer,
+  .zestIOT,
+  .aware,
+  .brandsek {
+    &__information {
+      padding: 3rem;
+    }
+  }
+
+  .cyberProduct {
+    &__title {
+      font-size: 35px;
+    }
+
+    &__info {
+      font-size: 25px;
+    }
+
+    &__text {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 25px;
+    }
+
+    &__item {
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &__disclaimer {
+      font-size: 16px;
+    }
+  }
+
+  .endToEnd {
+    margin-top: 20rem;
+
+    &__content {
+      height: 250px;
+
+      &_one {
+        padding-top: 5%;
+
+        p {
+          font-size: 18px;
+        }
+
+        h3 {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .serviceContainer {
+      padding: 50px 0;
+
+      &__content {
+        .serviceItem {
+          padding-right: 4%;
+          width: 20%;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+
+          h4 {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .button {
+        padding: 80px 0 40px 0;
+      }
+    }
+  }
+
+  .evaluationProcess {
+    &__content {
+      .heading {
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+
+      .title {
+        font-size: 40px;
+        padding-bottom: 5px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+
+      .listItems {
+        padding-top: 40px;
+
+        &__item {
+          width: 30%;
+
+          img {
+            height: 100px;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          .title {
+            font-size: 21px;
+            padding: 10px 0 5px 0;
+          }
+
+          .description {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .sectionButton {
+        padding-top: 50px;
+
+        p {
+          width: 180px;
+          height: 45px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .fourthSec {
+    scroll-margin-top: 60px;
+  }
+
+  .fifthSec {
+    // display: none;
+  }
+
+  .sixthSec {
+    padding: 50px 0;
+
+    &__content {
+      max-width: 1000px;
+
+      &_title {
+        font-size: 30px;
+      }
+
+      &_subtitle {
+        font-size: 50px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .firstSec {
+    background-color: #000;
+    padding-top: 90px;
+    // height: 90vh;
+  }
+
+  .security {
+    &__container {
+      grid-gap: 3rem;
+      grid-template-columns: 1fr;
+    }
+
+    &__items {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+    }
+  }
+
+  .cyberProduct {
+    &__info {
+      font-weight: 300;
+    }
+
+    &__text {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &__item {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &__disclaimer {
+      font-size: 14px;
+    }
+  }
+
+  .sailPoint,
+  .netwitness,
+  .archer,
+  .zestIOT,
+  .aware,
+  .brandsek {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+
+    &__information {
+      padding: 40px 25px;
+      order: 2;
+    }
+
+    &__image {
+      height: 500px;
+      order: 1;
+    }
+  }
+
+  .brandsek {
+    border-bottom: none;
+  }
+
+  .recruitSec {
+    background-position: top;
+    background-image: linear-gradient(90deg, #000 0%, transparent 50%),
+      url("../../public/images/skills_advantedge/skills_advantedge.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__content {
+      padding-left: 0;
+    }
+  }
+
+  .endToEnd {
+    margin-top: 10rem;
+
+    &__content {
+      &_one {
+        h3 {
+          font-size: 30px;
+          width: 90%;
+        }
+      }
+    }
+
+    .serviceContainer {
+      padding: 40px 0px 40px 5%;
+
+      &__content {
+        .serviceItem {
+          width: 31%;
+          margin-bottom: 5%;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .button {
+        padding: 60px 0 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+      }
+    }
+  }
+
+  .thirdSec {
+    background-color: #5c2dcc;
+  }
+
+  .fourthSec {
+    background-color: #000;
+    padding: 100px 0 50px 0;
+
+    &__content {
+      &_desktop {
+        display: none;
+      }
+
+      &_mob {
+        display: block;
+        padding: 40px 0;
+      }
+    }
+
+    .section_title {
+      display: block;
+      font-size: 60px;
+      font-weight: 100;
+      font-family: "ak-reg";
+      padding-bottom: 30px;
+    }
+
+    .getInTouch {
+      display: block;
+      width: 156px;
+      height: 43px;
+      background-color: #fff;
+      color: #0b0754;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+  }
+
+  .fifthSec {
+    background-color: #fff;
+  }
+
+  .sixthSec {
+    padding: 50px 0;
+
+    &__content {
+      max-width: 1000px;
+
+      &_title {
+        font-size: 30px;
+      }
+
+      &_subtitle {
+        font-size: 50px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .firstSec {
+    background-color: #000;
+    padding-top: 50px;
+    height: 100%;
+  }
+  .secondSec {
+    // background-image: url("../../public/images/home_page/dotted-background.png");
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+  }
+
+  .security {
+    padding: 50px 0px;
+    &__head {
+      &--title {
+        font-size: 28px;
+      }
+    }
+
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__items {
+      width: 100%;
+
+      grid-template-columns: 1fr;
+      grid-auto-rows: 1fr;
+    }
+  }
+
+  .sailPoint,
+  .netwitness,
+  .archer,
+  .zestIOT,
+  .aware,
+  .brandsek {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+
+    &__information {
+      padding: 35px 15px;
+      order: 2;
+    }
+
+    &__image {
+      height: 400px;
+      order: 1;
+    }
+  }
+
+  .cyberProduct {
+    &__logo {
+      img {
+        width: 50%;
+      }
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &__info {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+
+    &__item {
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &__disclaimer {
+      font-size: 14px;
+    }
+  }
+
+  .brandsek {
+    border-bottom: none;
+  }
+
+  .recruitSec {
+    overflow: hidden;
+    background-position: top;
+    background-image: linear-gradient(90deg, #000 0%, transparent 50%),
+      url("../../public/images/skills_advantedge/skills_advantedge.jpg");
+
+    padding-bottom: 50px;
+
+    &__content {
+      padding-left: 0;
+      width: 92%;
+    }
+  }
+
+  .endToEnd {
+    margin-top: 50px;
+
+    &__content {
+      background-position: center;
+      width: 100%;
+
+      &_one {
+        p {
+          font-size: 16px;
+        }
+
+        h3 {
+          font-size: 26px;
+          width: 100%;
+        }
+      }
+    }
+
+    .serviceContainer {
+      &__content {
+        .serviceItem {
+          width: 50%;
+          margin-bottom: 10%;
+
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .evaluationProcess {
+    &__content {
+      .title {
+        font-size: 30px;
+        width: 100%;
+      }
+
+      .description {
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .listItems {
+        &__item {
+          width: 100%;
+
+          .title {
+          }
+
+          .description {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .thirdSec {
+    background-color: #5c2dcc;
+  }
+
+  .fourthSec {
+    background-color: #000;
+    padding: 50px 0;
+
+    &__content {
+      &_desktop {
+        display: none;
+      }
+
+      &_mob {
+        display: block;
+        padding: 40px 0;
+      }
+    }
+
+    .section_title {
+      display: block;
+      font-size: 40px;
+      font-weight: 100;
+      font-family: "ak-reg";
+      padding-bottom: 30px;
+    }
+
+    .getInTouch {
+      display: block;
+      width: 156px;
+      height: 43px;
+      background-color: #fff;
+      color: #0b0754;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+  }
+
+  .fifthSec {
+    background-color: #fff;
+  }
+
+  .sixthSec {
+    padding: 50px 0;
+
+    &__content {
+      max-width: 1000px;
+
+      &_title {
+        font-size: 30px;
+      }
+
+      &_subtitle {
+        font-size: 40px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

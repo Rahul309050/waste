@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "Skill is the New Oil",
+    "description": "Why Manpower became the most valuable resource for businesses.",
+    "img": "https://kurage-assets.s3.ap-south-1.amazonaws.com/agrim/blogThumbnail/skill_oil_cover.jpg",
+    "alt": "Skill is the New Oil",
+    "slug": "skill_is_the_new_oil",
+    "category": "Human Resources"
+  },
+  {
+    "id": 2,
+    "title": "Embracing Skills-on-Demand for Today’s Enterprise",
+    "description": "How do businesses tackle the severe skill gap that plague many digital teams today?",
+    "img": "https://kurage-assets.s3.ap-south-1.amazonaws.com/agrim/blogThumbnail/skills_on_demand_cover.jpg",
+    "slug": "embracing_skills_on_demand_for_todays_enterprise",
+    "alt": "Embracing Skills-on-Demand for Today’s Enterprise",
+    "category": "Business Development"
+  },
+  {
+    "id": 3,
+    "title": "Cloud Imperatives for Digital Leaders in 2022",
+    "description": "The business imperatives that will drive cloud adoption and transformation in the coming year.",
+    "img": "https://kurage-assets.s3.ap-south-1.amazonaws.com/agrim/blogThumbnail/A03.jpg",
+    "slug": "cloud_imperatives_for_digital_leaders_in_2022",
+    "alt": "Cloud Imperatives for Digital Leaders in 2022",
+    "category": "Blog"
+  },
+
+  {
+    "id": 4,
+    "title": "What role do startups play in a mature sector?",
+    "description": "In a developed market, is there room for new players? Or will they get eaten up by the bigger fish?",
+    "img": "https://kurage-assets.s3.ap-south-1.amazonaws.com/agrim/blogThumbnail/A04.jpg",
+    "slug": "what_role_do_startups_play_in_a_mature_sector",
+    "alt": "What role do startups play in a mature sector?",
+    "category": "Blog"
+  }
+]
