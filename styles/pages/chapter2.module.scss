@@ -1,0 +1,724 @@
+.firstSec {
+    // width: 100%;
+    // height: calc(100vh - 120px);
+    padding-top: 200px;
+    // background-image: url("../../public/images/home_page/dotted-background.png");
+    background-color: #ffffffd4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+
+  
+    &__content {
+      display: flex;
+      align-items: center;
+  
+      &__left {
+        width: 100%;
+        .landingTitle1 {
+          font-size: 30px;
+          font-family: "ak-reg";
+          white-space: nowrap;
+          color: #0b0754;
+          padding: 1% 0;
+
+        }
+        .landingTitle {
+          font-size: 80px;
+          font-family: "ak-reg";
+          white-space: nowrap;
+          color: #0b0754;
+          padding: 1% 0;
+
+
+        }
+  
+        .landingDesc {
+          font-size: 40px;
+          font-family: "ak-light";
+          padding: 10% 0;
+          color: #000000;
+
+          line-height: 150%;
+          width: 90%;
+        }
+  
+        .homeCTA {
+          display: flex;
+  
+          .workTogether,
+          .ExploreServices {
+            margin-right: 30px;
+            font-size: 20px;
+            font-family: "ak-reg";
+            color: #0b0754;
+            background-color: #fff;
+            width: 246px;
+            height: 59px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-image: linear-gradient(
+              to left,
+              #fff,
+              #fff,
+              #19c6fe,
+              #5b2dcc
+            );
+            background-size: 300%;
+            background-position: 100% 0;
+            transition: all 0.4s ease-out;
+  
+            &:hover {
+              background-position: 0 100%;
+              color: #fff;
+            }
+          }
+  
+          .ExploreServices {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            background-image: linear-gradient(
+              to left,
+              transparent,
+              transparent,
+              #19c6fe,
+              #5b2dcc
+            );
+            background-size: 300%;
+            background-position: 100% 0;
+            transition: all 0.4s ease-out;
+  
+            &:hover {
+              background-position: 0 100%;
+              color: #fff;
+              border: none;
+            }
+          }
+        }
+      }
+ 
+    }
+     
+    &__right {
+        position: absolute;
+        width: 100%;
+        margin-top: -5.2%;
+  
+        img {
+          width: 100%;
+        }
+      }
+  }
+  
+  .secondSec {
+    padding: 50px 0 100px 0;
+    max-width: 1920px;
+    width: 95%;
+    margin: auto;
+    scroll-margin-top: 130px;
+  }
+  
+  .thirdSec {
+    padding: 50px 0 0px 0;
+    position: relative;
+    // min-height: calc(100vh - 120px);
+  
+    &__bgAnimation {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: -10;
+      opacity: 0.7;
+    }
+      background-color: #96c0fa7e;
+  
+  }
+  
+  .lasttSec {
+    // width: 100%;
+    // height: calc(100vh - 120px);
+    padding-top: 200px;
+    padding-bottom: 80px;
+    // background-image: url("../../public/images/home_page/dotted-background.png");
+    background-color: #9dc4fb;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  
+    &__content {
+      display: flex;
+      align-items: center;
+  
+      &__left {
+        width: 60%;
+  
+        .landingTitle {
+          font-size: 80px;
+          font-family: "ak-reg";
+          white-space: nowrap;
+        }
+  
+        .landingDesc {
+          font-size: 40px;
+          font-family: "ak-light";
+          padding: 5% 0;
+          line-height: 150%;
+        }
+  
+        .homeCTA {
+          display: flex;
+  
+          .workTogether,
+          .ExploreServices {
+            margin-right: 30px;
+            font-size: 20px;
+            font-family: "ak-reg";
+            color: #0b0754;
+            background-color: #fff;
+            width: 246px;
+            height: 59px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-image: linear-gradient(
+              to left,
+              #fff,
+              #fff,
+              #19c6fe,
+              #5b2dcc
+            );
+            background-size: 300%;
+            background-position: 100% 0;
+            transition: all 0.4s ease-out;
+  
+            &:hover {
+              background-position: 0 100%;
+              color: #fff;
+            }
+          }
+  
+          .ExploreServices {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            background-image: linear-gradient(
+              to left,
+              transparent,
+              transparent,
+              #19c6fe,
+              #5b2dcc
+            );
+            background-size: 300%;
+            background-position: 100% 0;
+            transition: all 0.4s ease-out;
+  
+            &:hover {
+              background-position: 0 100%;
+              color: #fff;
+              border: none;
+            }
+          }
+        }
+      }
+  
+      &__right {
+        width: 55%;
+        padding-top: 20%;
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1650px) {
+    .firstSec {
+      padding-top: 120px;
+      padding-bottom: 50px;
+  
+      &__content {
+        &__left {
+          .landingTitle {
+            font-size: 65px;
+          }
+  
+          .landingDesc {
+            font-size: 28px;
+          }
+  
+          .homeCTA {
+            .workTogether,
+            .ExploreServices {
+              font-size: 16px;
+              width: 200px;
+              height: 45px;
+            }
+          }
+        }
+      }
+    }
+  
+    .secondSec {
+      padding: 50px 0 100px 0;
+      max-width: 1920px;
+      width: 95%;
+      margin: auto;
+      scroll-margin-top: 100px;
+    }
+  
+    .thirdSec {
+      padding: 50px 0 0px 0;
+      position: relative;
+      // min-height: calc(100vh - 90px);
+    }
+    .lasttSec {
+      // width: 100%;
+      // height: calc(100vh - 120px);
+      padding-top: 200px;
+      padding-bottom: 80px;
+      // background-image: url("../../public/images/home_page/dotted-background.png");
+      background-color: #9dc4fb;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    
+      &__content {
+        display: flex;
+        align-items: center;
+    
+        &__left {
+          width: 60%;
+    
+          .landingTitle {
+            font-size: 50px;
+            font-family: "ak-reg";
+            white-space: nowrap;
+          }
+    
+          .landingDesc {
+            font-size: 30px;
+            font-family: "ak-light";
+            padding: 5% 0;
+            line-height: 150%;
+          }
+    
+          .homeCTA {
+            display: flex;
+    
+            .workTogether,
+            .ExploreServices {
+              margin-right: 30px;
+              font-size: 20px;
+              font-family: "ak-reg";
+              color: #0b0754;
+              background-color: #fff;
+              width: 246px;
+              height: 59px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              background-image: linear-gradient(
+                to left,
+                #fff,
+                #fff,
+                #19c6fe,
+                #5b2dcc
+              );
+              background-size: 300%;
+              background-position: 100% 0;
+              transition: all 0.4s ease-out;
+    
+              &:hover {
+                background-position: 0 100%;
+                color: #fff;
+              }
+            }
+    
+            .ExploreServices {
+              background-color: transparent;
+              color: #fff;
+              border: 1px solid #fff;
+              background-image: linear-gradient(
+                to left,
+                transparent,
+                transparent,
+                #19c6fe,
+                #5b2dcc
+              );
+              background-size: 300%;
+              background-position: 100% 0;
+              transition: all 0.4s ease-out;
+    
+              &:hover {
+                background-position: 0 100%;
+                color: #fff;
+                border: none;
+              }
+            }
+          }
+        }
+    
+        &__right {
+          width: 55%;
+          padding-top: 20%;
+    
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .firstSec {
+      padding-top: 120px;
+      padding-bottom: 50px;
+      &__right {
+        width: 100%;
+        bottom: 0;
+
+      }
+      &__content {
+        flex-direction: column;
+        align-items: flex-start;
+
+        
+  
+        &__left {
+          width: 100%;
+          padding: 5% 0 8% 0;
+  
+          .landingTitle {
+            font-size: 65px;
+            white-space: normal;
+          }
+  
+          .landingDesc {
+            font-size: 28px;
+            width: 80%;
+          }
+        }
+  
+    
+      }
+    }
+  
+    .secondSec {
+      padding: 50px 0 80px 0;
+      max-width: 1920px;
+      width: 95%;
+      margin: auto;
+    }
+  
+    .thirdSec {
+      padding: 50px 0 0px 0;
+      position: relative;
+      overflow: hidden;
+      // min-height: calc(100vh - 90px);
+  
+      &__bgAnimation {
+        // position: relative;
+        transform: scale(2);
+        height: auto;
+        bottom: 45%;
+      }
+    }
+  
+    .lasttSec {
+      width: 100%;
+      // height: calc(100vh - 120px);
+      padding-top: 50px;
+      padding-bottom: 80px;
+      // background-image: url("../../public/images/home_page/dotted-background.png");
+      background-color: #9dc4fb;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    
+      &__content {
+        display: flex;
+        align-items: center;
+    
+        &__left {
+          width: 50%;
+    
+          .landingTitle {
+            font-size: 35px;
+            font-family: "ak-reg";
+            white-space: nowrap;
+            padding: 5% 0;
+  
+          }
+    
+          .landingDesc {
+            font-size: 20px;
+            font-family: "ak-light";
+            padding: 5% 0;
+            line-height: 150%;
+          }
+    
+          .homeCTA {
+            display: flex;
+    
+            .workTogether,
+            .ExploreServices {
+              margin-right: 30px;
+              font-size: 20px;
+              font-family: "ak-reg";
+              color: #0b0754;
+              background-color: #fff;
+              width: 246px;
+              height: 59px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              background-image: linear-gradient(
+                to left,
+                #fff,
+                #fff,
+                #19c6fe,
+                #5b2dcc
+              );
+              background-size: 300%;
+              background-position: 100% 0;
+              transition: all 0.4s ease-out;
+    
+              &:hover {
+                background-position: 0 100%;
+                color: #fff;
+              }
+            }
+    
+            .ExploreServices {
+              background-color: transparent;
+              color: #fff;
+              border: 1px solid #fff;
+              background-image: linear-gradient(
+                to left,
+                transparent,
+                transparent,
+                #19c6fe,
+                #5b2dcc
+              );
+              background-size: 300%;
+              background-position: 100% 0;
+              transition: all 0.4s ease-out;
+    
+              &:hover {
+                background-position: 0 100%;
+                color: #fff;
+                border: none;
+              }
+            }
+          }
+        }
+    
+        &__right {
+          width: 55%;
+          padding-top: 20%;
+    
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    .firstSec {
+      padding-top: 65px;
+      padding-bottom: 0px;
+      &__right {
+        padding: 0 0;
+        z-index: 5;
+        width: 100%;
+        bottom: 0;
+
+      }
+  
+      &__content {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+  
+        &__left {
+          width: 100%;
+          padding: 5% 3% 8% 3%;
+          z-index: 10;
+          margin-bottom: 50px;
+  
+          .landingTitle {
+            font-size: 55px;
+            line-height: 125%;
+            font-weight: 100;
+            white-space: normal;
+          }
+  
+          .landingDesc {
+            font-size: 20px;
+            width: 100%;
+            padding: 8% 0;
+          }
+  
+          .homeCTA {
+            width: 100%;
+            .workTogether,
+            .ExploreServices {
+              font-size: 16px;
+              width: 50%;
+              height: 45px;
+              margin-right: 15px;
+            }
+          }
+        }
+  
+       
+      }
+    }
+  
+    .secondSec {
+      padding: 30px 0 50px 0;
+      max-width: 1920px;
+      width: 100%;
+      margin: auto;
+    }
+  
+    .thirdSec {
+      padding: 30px 0 30px 0;
+      position: relative;
+      min-height: auto;
+      overflow: hidden;
+  
+      &__bgAnimation {
+        position: absolute;
+        transform: scale(1.5);
+      }
+    }
+    .lasttSec {
+      width: 100%;
+      // height: calc(100vh - 120px);
+      padding-top: 50px;
+      padding-bottom: 80px;
+      // background-image: url("../../public/images/home_page/dotted-background.png");
+      background-color: #9dc4fb;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    
+      &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        &__left {
+          width: 100%;
+    
+          .landingTitle {
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            font-family: "ak-reg";
+            white-space: nowrap;
+            padding: 5% 0;
+  
+          }
+    
+          .landingDesc {
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            font-family: "ak-light";
+            padding: 5% 0;
+            line-height: 150%;
+          }
+    
+          .homeCTA {
+            display: flex;
+    
+            .workTogether,
+            .ExploreServices {
+              margin-right: 30px;
+              font-size: 20px;
+              font-family: "ak-reg";
+              color: #0b0754;
+              background-color: #fff;
+              width: 246px;
+              height: 59px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              background-image: linear-gradient(
+                to left,
+                #fff,
+                #fff,
+                #19c6fe,
+                #5b2dcc
+              );
+              background-size: 300%;
+              background-position: 100% 0;
+              transition: all 0.4s ease-out;
+    
+              &:hover {
+                background-position: 0 100%;
+                color: #fff;
+              }
+            }
+    
+            .ExploreServices {
+              background-color: transparent;
+              color: #fff;
+              border: 1px solid #fff;
+              background-image: linear-gradient(
+                to left,
+                transparent,
+                transparent,
+                #19c6fe,
+                #5b2dcc
+              );
+              background-size: 300%;
+              background-position: 100% 0;
+              transition: all 0.4s ease-out;
+    
+              &:hover {
+                background-position: 0 100%;
+                color: #fff;
+                border: none;
+              }
+            }
+          }
+        }
+    
+        &__right {
+          width: 90%;
+          padding-top: 20%;
+    
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  

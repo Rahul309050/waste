@@ -1,0 +1,152 @@
+@import "./shared/font";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #7db3ff;
+  color: #fff;
+  font-family: "ak-reg";
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+  overflow-x: hidden;
+}
+
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+a:focus,
+a:visited,
+a:active {
+  outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  max-width: 1794px;
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content {
+  width: auto;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+}
+
+
+
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.lottie-loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.slick-track {
+  width: fit-content !important;
+  display: flex !important;
+}
+
+
+
+.hero-content-line-inner {
+  overflow: hidden;
+  transition: all 1s;
+  padding-left: 0px;
+  padding-right: 0px;
+  opacity: 1;
+  // width: 0;
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.slick-active {
+  .hero-content-line-inner {
+    overflow: hidden;
+    transition: all 1s;
+    opacity: 1;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    // width: auto;
+  }
+}
+
+.hero-content-line-inner2 {
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.5s;
+  // padding: 0px;
+  scale: 0.9;
+}
+
+.slick-active {
+  .hero-content-line-inner2 {
+    opacity: 1;
+    overflow: hidden;
+    transition: all 0.5s;
+    scale: 1;
+    // padding: 40px;
+  }
+}
+
+
+.linkss {
+ font-family: "ak-reg";
+ font-size: 20px;
+
+  position: relative;
+}
+
