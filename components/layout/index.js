@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import Header from "./header";
 
 const BaseLayout = ({
-  title = "Agrim",
+  title = "waste Management",
   description = "",
   hideFooter = false,
   ...props

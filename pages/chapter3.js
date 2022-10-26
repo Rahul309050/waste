@@ -51,7 +51,7 @@ const Home = () => {
           </div>
         </section>
         <section className={classes.secondSec}>
-          <div className={` container ${classes.secondSec__content}`}>
+          <div className={` container ${classes.secondSec__content}`} >
             <Experts />
           </div>
         </section>    

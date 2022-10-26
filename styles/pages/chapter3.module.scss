@@ -125,10 +125,13 @@
   }
   
   .secondSec {
-    padding: 600px 0 100px 0;
-    width: 100%;
-    height: 130vh;
+    padding: 50px 0 100px 0;
+    max-width: 1920px;
+    width: 95%;
     margin: auto;
+    scroll-margin-top: 130px;
+    height: 110vh;
+    padding-top: 25%;
     position: relative;
 
   }
@@ -282,14 +285,12 @@
   
 
     .secondSec {
-        padding: 350px 0 100px 0;
+        padding: 50px 0 100px 0;
+        max-width: 1920px;
         width: 95%;
-        // height: 100vh;
         margin: auto;
-        position: relative;
-        // scroll-margin-top: 100px;
- 
-
+        scroll-margin-top: 100px;
+        margin-top: 25%;
       }
     .thirdSec {
       padding: 50px 0 0px 0;
@@ -433,11 +434,11 @@
     }
   
     .secondSec {
-      padding: 50px 0 80px 0;
-      max-width: 1920px;
-      width: 95%;
-      margin: auto;
-    }
+        padding: 50px 0 80px 0;
+        max-width: 1920px;
+        width: 95%;
+        margin: auto;
+      }
   
     .thirdSec {
       padding: 50px 0 0px 0;
@@ -611,9 +612,9 @@
   
     .secondSec {
       padding: 30px 0 50px 0;
-      max-width: 1920px;
       width: 100%;
       margin: auto;
+      height: auto;
     }
   
     .thirdSec {
