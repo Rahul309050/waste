@@ -25,6 +25,10 @@
     background-image: linear-gradient(to right, #7db3ffd5 , #7a87e8d5);
 
     margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     &--head {
       margin: 25px 0;

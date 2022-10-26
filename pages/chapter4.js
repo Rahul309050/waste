@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import BaseLayout from "../components/layout/index";
-import classes from "../styles/pages/chapter2.module.scss";
+import classes from "../styles/pages/chapter4.module.scss";
 import Secondsec from "../components/ch2_2ndsec"
 import Thirdsec from "../components/ch2_3rdsec"
 
@@ -34,7 +34,7 @@ const Home = () => {
             </div>
           <div className={`container ${classes.firstSec__content}`}>
             <div className={classes.firstSec__content__left}>
-              <h2 className={classes.landingTitle1}>Chapter : 2</h2>
+              <h2 className={classes.landingTitle1}>Chapter : 4</h2>
 
               <h2 className={classes.landingTitle}>
                 What is happining to our waste ?

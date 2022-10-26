@@ -1,19 +1,21 @@
 import { useState, useRef } from "react";
 import classes from ".././styles/pages/ch2_2ndsec.module.scss";
+import Link from "next/link";
+
 
 
 const accordionContent = [
   {
     id: 1,
     title: "1. How they are digging to put waste? ",
-    link: "https://www.youtube.com/watch?v=eTGdnj4hSpk" ,
+    link: "https://www.youtube.com/watch?v=ZLRRHrNHK5g" ,
     content:
       "*01 Dig a hole, approximately 10 to 12 inches deep and as wide as you want or need it to be. *02)Drop food scraps or other organic matter into the hole. *03) Replace the soil, and you're done.      ",
   },
   {
     id: 2,
     title: "2. How they are forced to eat inside the mosquito net?",
-    link: "https://www.youtube.com/watch?v=eTGdnj4hSpk" ,
+    link: "https://www.youtube.com/watch?v=qmHJr7K3-Mo" ,
 
     content:
       "In this Masterclass, we explore the most trending topics in the world of Product Management. You get a pulse of the industry that you’d love to grow your career in, making this Masterclassthe perfect stepping stone.",
@@ -22,7 +24,7 @@ const accordionContent = [
   {
     id: 3,
     title: "3. The poisonous liquid oozingg out.    ",
-    link: "https://www.youtube.com/watch?v=eTGdnj4hSpk" ,
+    link: "https://www.youtube.com/watch?v=ZLRRHrNHK5g" ,
 
     content:
       "Of course! Learning is only useful when it is interactive. At the end of the Masterclass, there will be a Q&A session where Manan will answer ALL your doubts.",
@@ -30,7 +32,7 @@ const accordionContent = [
   {
     id: 4,
     title: "4. The fruit farm destroyed by the flies",
-    link: "https://www.youtube.com/watch?v=eTGdnj4hSpk" ,
+    link: "https://www.youtube.com/watch?v=qmHJr7K3-Mo" ,
 
     content:
       "All participants of this Masterclass will be awarded a certificate upon completion of the Masterclass. Feel free to flaunt your certificates on all your social media profiles!",
@@ -94,9 +96,15 @@ const Accordion = ({ e, i, setIndex, index }) => {
             e?.id === index ? `${plane?.current?.scrollHeight}px` : "0px",
         }}
       >
-        <p>{e?.content} <br />    <a href=""   target="_blank"
-            rel="noreferrer"
-            className="linkss">{e?.link}</a> </p>
+                <Link href= {e?.link} passHref>
+
+        <p>{e?.content} <br />   
+            <a className={classes.logo_img}>
+           
+            </a>
+        </p>
+        </Link>
+
       </div>
     </div>
 
@@ -125,7 +133,8 @@ const Sixthsec = () => {
                 <Accordion
                   e={e}
                   i={i}
-                  setIndex={setAccIndex}
+                  setIndex={setAccIndex} 
+                  
                   index={accIndex}
                 />
               </div>
