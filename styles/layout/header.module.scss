@@ -49,6 +49,68 @@
       &:hover ~ .dot {
         transform: scaleX(1);
       }
+      .buttonGradient {
+        display: flex;
+        justify-content: center;
+  
+        position: relative;
+        z-index: 20;
+  
+        a {
+          display: inline-block;
+          // background-color: #fff;
+          background-image: linear-gradient(90deg, #00ffb3, #35fdc1, #1e6dff);
+          color: rgb(2, 0, 122);
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 20px;
+          font-family: "ak-lightItalic";
+          cursor: pointer;
+          padding: 15px 20px;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          border-radius: 45px;
+          margin-top: 0%;
+  
+          span {
+            padding-left: 10px;
+            svg path {
+              stroke:rgb(2, 0, 122);
+            }
+          }
+  
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 100%;
+            background-image: linear-gradient(90deg, #44ff15, #4bcc00a8, #047a0ec0);
+            transition: all 0.4s;
+            z-index: -1;
+            opacity: 0;
+            overflow: hidden;
+            border-radius: 45px;
+          }
+  
+          &:hover {
+            color: rgb(255, 255, 255);;
+  
+            span {
+              svg path {
+                stroke: #ffffff;
+              }
+            }
+          }
+  
+          &:hover::after {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+      }
 
       .gridMenu {
         margin: 0 20px;
@@ -447,6 +509,7 @@
       height: 100%;
       width: 100%;
       right: 0;
+
       // background-position: center;
       // background-size: cover;
       // background-repeat: no-repeat;
@@ -461,7 +524,68 @@
       flex-direction: column;
       justify-content: flex-start;
       padding-top: 150px;
-
+    .buttonGradient {
+        display: flex;
+        justify-content: center;
+  
+        position: relative;
+        z-index: 20;
+  
+        a {
+          display: inline-block;
+          // background-color: #fff;
+          background-image: linear-gradient(90deg, #00ffb3, #35fdc1, #1e6dff);
+          color: rgb(2, 0, 122);
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 20px;
+          font-family: "ak-lightItalic";
+          cursor: pointer;
+          padding: 15px 20px;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          border-radius: 45px;
+          margin-top: 0%;
+  
+          span {
+            padding-left: 10px;
+            svg path {
+              stroke:rgb(2, 0, 122);
+            }
+          }
+  
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 100%;
+            background-image: linear-gradient(90deg, #44ff15, #4bcc00a8, #047a0ec0);
+            transition: all 0.4s;
+            z-index: -1;
+            opacity: 0;
+            overflow: hidden;
+            border-radius: 45px;
+          }
+  
+          &:hover {
+            color: rgb(255, 255, 255);;
+  
+            span {
+              svg path {
+                stroke: #ffffff;
+              }
+            }
+          }
+  
+          &:hover::after {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+      }
       &_items {
         width: 100%;
         // height: 100%;

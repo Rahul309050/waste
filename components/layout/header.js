@@ -87,6 +87,54 @@ const Header = () => {
           </Link>
           <div className={classes.header__content_right}>
             <div className={classes.header__content_links} id="nav">
+            <div className={`${classes.buttonGradient}`}>
+           
+            <a
+            href="https://game-sunidhi.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+           
+          >
+              Games 
+             
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24.648"
+                  height="13.298"
+                  viewBox="0 0 24.648 13.298"
+                >
+                  <g
+                    id="Group_11558"
+                    data-name="Group 11558"
+                    transform="translate(0.157 0.806)"
+                  >
+                    <path
+                      id="Path_4735"
+                      data-name="Path 4735"
+                      d="M-6690.268,3654.953c6.855-1.854,19.414-.9,23.443,0"
+                      transform="translate(6690.268 -3649.102)"
+                      fill="none"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.2"
+                    />
+                    <path
+                      id="Path_4736"
+                      data-name="Path 4736"
+                      d="M-6674.716,3648.87a11.07,11.07,0,0,0,6.522,5.933c-2.81.916-5.359,2.351-6.858,5.769"
+                      transform="translate(6692.085 -3648.87)"
+                      fill="none"
+                      stroke="#FFFFFF"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.2"
+                    />
+                  </g>
+                </svg>
+              </span>
+              </a>
+          
+          </div>
             <Link href="/" passHref>
                 <a className={classes.contact}>
                   Chapter 1
@@ -399,6 +447,54 @@ const Header = () => {
               <Link href="/chapter4" passHref>
                 <a className={classes.sidenav_items_link}>Chapter 4</a>
               </Link>
+              <div className={`${classes.buttonGradient}`}>
+           
+           <a
+           href="https://game-sunidhi.vercel.app/"
+           target="_blank"
+           rel="noreferrer"
+          
+         >
+             Games 
+            
+             <span>
+               <svg
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="24.648"
+                 height="13.298"
+                 viewBox="0 0 24.648 13.298"
+               >
+                 <g
+                   id="Group_11558"
+                   data-name="Group 11558"
+                   transform="translate(0.157 0.806)"
+                 >
+                   <path
+                     id="Path_4735"
+                     data-name="Path 4735"
+                     d="M-6690.268,3654.953c6.855-1.854,19.414-.9,23.443,0"
+                     transform="translate(6690.268 -3649.102)"
+                     fill="none"
+                     stroke="#FFFFFF"
+                     strokeWidth="1.2"
+                   />
+                   <path
+                     id="Path_4736"
+                     data-name="Path 4736"
+                     d="M-6674.716,3648.87a11.07,11.07,0,0,0,6.522,5.933c-2.81.916-5.359,2.351-6.858,5.769"
+                     transform="translate(6692.085 -3648.87)"
+                     fill="none"
+                     stroke="#FFFFFF"
+                     strokeLinecap="round"
+                     strokeLinejoin="round"
+                     strokeWidth="1.2"
+                   />
+                 </g>
+               </svg>
+             </span>
+             </a>
+         
+         </div>
             </div>
           </div>
         </div>
