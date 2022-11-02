@@ -112,6 +112,7 @@
 .thirdSec {
   padding: 50px 0 0px 0;
   position: relative;
+  overflow:hidden;
   // min-height: calc(100vh - 120px);
 
   &__bgAnimation {
