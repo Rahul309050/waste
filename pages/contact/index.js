@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Contact us - Agrim</title>
+        <title>contact</title>
         <meta
           name="description"
           content="Do you have a question, or a project you need help with?"
